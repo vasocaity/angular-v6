@@ -1,0 +1,19 @@
+<div *ngIf="memberForm">
+  <form [formGroup]="memberForm">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" formControlName="name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>imgUrl</label>
+      <input type="text" formControlName="imgUrl" class="form-control">
+      <span *ngIf="memberForm.get('imgUrl').invalid" class="require"> ไม่ถูกกกก </span>
+    </div>
+    <div class="form-group">
+      <label>Instagram </label>
+      <input type="text" formControlName="instagramId" class="form-control">
+    </div>
+    <button class="btn btn-primary" (click)="updateMember()" > SAVE </button>
+    <button class="btn btn-light ml-1" (click)="reset()"> RESET </button>
+  </form>
+</div>

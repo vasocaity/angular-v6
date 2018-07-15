@@ -1,0 +1,14 @@
+
+<div *ngIf="feedItem">
+  d
+  <div class="card col-4" *ngFor="let instagram of feedItem">
+      <div class="card-img-float">
+        <img class="card-img-top" [src]="instagram.thumbnail" [alt]="instagram.username" [title]="instagram.username">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">
+          <b>{{instagram.username}} :</b> {{instagram.title | slice:0:50 }} .. 
+        </h5>
+      </div>
+  </div>
+</div>

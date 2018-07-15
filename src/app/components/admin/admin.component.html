@@ -1,0 +1,16 @@
+<div *ngIf="bnkMembers">
+  <table class="table table-hover">
+    <thead>
+      <th>ชื่อ</th>
+      <th>แก้ไข</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of bnkMembers">
+        <td>{{ member.name }}</td>
+        <td>
+          <a class="btn btn-light" [routerLink]="['edit' ,member._id ]">แก้ไข </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

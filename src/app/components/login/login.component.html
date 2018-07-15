@@ -1,0 +1,16 @@
+<div class="pannel">
+<form [formGroup]="logInForm">
+  <div class="form-group">
+      <label>Login</label>
+      <input type="text" class="form-control" formControlName="login">
+  </div>
+  <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" formControlName="password">
+  </div>
+  <button class="btn brn-primary" (click)="login()"> Login</button>
+  <span *ngIf="loginError">
+    <br> {{ loginError }}
+  </span>
+</form>
+</div>

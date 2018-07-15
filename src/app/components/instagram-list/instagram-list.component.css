@@ -1,0 +1,19 @@
+/* .card-img-top {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0,0,0.3);
+}
+
+.card-img-float {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -10px;
+} */
+.card {
+    width: 350px;
+    height: auto;
+    float: left;
+    margin-bottom: 5px;
+}
